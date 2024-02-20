@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        span{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row pt-2 m-2">
+            <div id="alertMessage">
+                
+            </div>
+            <div class="d-grid gap-2 col-md-6 mx-auto p-2 col-xs-12 " style="background-color: antiquewhite;">
+                <H2>BMI Calculator!</H2>
+                <form>
+                    <div class="mb-3">
+                      <label for="height" class="form-label">Height(CM)</label>
+                      <input type="text" class="form-control" id="height" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="Weight" class="form-label">Weight(KG)</label>
+                      <input type="text" class="form-control" id="weight" required>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="submit" id="submitBtn" class="btn btn-primary">Calculate BMI</button>
+                    </div>
+                </form>
+            </div>
+            <div class="d-grid gap-2 col-md-6 mx-auto p-2 col-xs-12 border">
+                <h3>Result:- </h3>
+                <div id="result">
+
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>Age may be taken into account when calculating the <b>Body Mass Index (BMI)</b> and accompanying weight status using the BMI Calculator. To convert units into US or metric units, use the "Metric Units" page for the International System of Units or the "Other Units" option. It should be noted that the calculator not only calculates BMI but also the Ponderal Index; both are covered in full below.
+                </p>
+
+                <h4>Introduction of BMI</h4>
+                <p>Based on a person's height and weight, BMI calculates their leanness or corpulence and is used to determine tissue mass. It's commonly used to determine whether an individual is at a healthy body weight for their height. 
+                </p>
+
+                <h4>Risks associated with being overweight</h4>
+                <p>
+                    The risk of several significant illnesses and health disorders is increased in those who are overweight. The Centers for Disease Control and Prevention (CDC) have listed the following risks:
+                </p>
+                    <ul>
+                        <li>elevated blood pressure</li>
+                    <li>Elevated LDL cholesterol, commonly referred to as "bad cholesterol," reduced HDL cholesterol, which is regarded as beneficial cholesterol when taken in moderation, and elevated triglyceride levels
+                    <li>Diabetes type II</li>
+                    <li>Heart conditions in the coronary heart</li>
+                    <li>a stroke</li>
+                    <li>gallbladder illness</li>
+                    <li>One kind of joint illness brought on by the degeneration of joint cartilage is osteoarthritis</li>
+                    <li>Issues with breathing and sleep apnea</li>
+                    <li>Some malignancies (liver, breast, colon, kidney, endometrium, and gallbladder)</li>
+                    <li>Poor standard of living</li>
+                    <li>Clinical depression, anxiety, and other mental diseases</li>
+                    <li>body aches and trouble performing specific physical tasks</li>
+                    <li>Generally speaking, a higher chance of dying than in someone with a healthy BMI</li>
+                    </ul>
+                <p>
+                    Being overweight may have a number of detrimental, and occasionally deadly, effects, as the following list illustrates. In general, one should aim to keep their BMI around 25 kg/m2, but if possible, they should speak with their doctor to find out if any lifestyle adjustments are necessary to get healthy.
+                </p>
+
+                <h4>Ponderal Index</h4>
+                <p>
+                    The Ponderal Index (PI) is similar to BMI in that it measures the leanness or corpulence of a person based on their height and weight.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="bmi_script.js"></script>
+</html>
